@@ -1,0 +1,10 @@
+@use '/src/styles/constants/colors';
+
+.quizBox {
+  position: relative;
+  width: 550px;
+  height: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 10px rgba(100, 100, 100, 10%);
+}
