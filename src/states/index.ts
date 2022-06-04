@@ -1,7 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
 
+import result from './result'
+
 export const store = configureStore({
-  reducer: {},
+  reducer: { result },
   devTools: process.env.NODE_ENV !== 'production',
   middleware: (getDefaultMiddleware) => getDefaultMiddleware({ serializableCheck: false }),
 })
