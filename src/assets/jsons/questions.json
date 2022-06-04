@@ -1,30 +1,6 @@
 {
   "react": [
     {
-      "question": "Which of the following command is used to create react-js-app ?",
-      "a": "npx create-react-app appname",
-      "b": "npm install create-react-app",
-      "c": "npx install create-react-app -g",
-      "d": "install - l create-react-app",
-      "answer": "a"
-    },
-    {
-      "question": "In React.js which one of the following is used to create a class for Inheritance ?",
-      "a": "Create",
-      "b": "Extends",
-      "c": "Inherits",
-      "d": "Delete",
-      "answer": "b"
-    },
-    {
-      "question": "What is the default port number in which the application run ?",
-      "a": "3000",
-      "b": "8080",
-      "c": "5000",
-      "d": "3030",
-      "answer": "a"
-    },
-    {
       "question": "Which of the following valid component return type of React ?",
       "a": "State & Props",
       "b": "Service & Components",
@@ -39,14 +15,6 @@
       "c": "Both of the above",
       "d": "None of the above",
       "answer": "a"
-    },
-    {
-      "question": "In React.js, how we can pass the data from one component to another in React.js ?",
-      "a": "SetState",
-      "b": "Render with arguments",
-      "c": "Props",
-      "d": "PropTypes",
-      "answer": "c"
     },
     {
       "question": "Which of the following is true about key props ?",
@@ -65,52 +33,12 @@
       "answer": "c"
     },
     {
-      "question": "What command is used to start the React local development server ?",
-      "a": "npm start",
-      "b": "npm build",
-      "c": "npm run dev",
-      "d": "npm serve",
-      "answer": "a"
-    },
-    {
       "question": "What is the children prop ?",
       "a": "A Property that lets you nest components in other components",
       "b": "A Property that adds child values to state",
       "c": "A Property that lets you pass data to child components",
       "d": "A Property that lets you set an object as a property",
       "answer": "a"
-    },
-    {
-      "question": "Whick keyword creates a constant in JS ?",
-      "a": "constant",
-      "b": "var",
-      "c": "let",
-      "d": "const",
-      "answer": "d"
-    },
-    {
-      "question": "A copy of the 'real' DOM that is kept in memory is called what ?",
-      "a": "React DOM",
-      "b": "Virtual DOM",
-      "c": "DOM",
-      "d": "Shadow DOM",
-      "answer": "b"
-    },
-    {
-      "question": "What is the naming convention for react component ?",
-      "a": "WantedOnboarding",
-      "b": "wantedOnboarding",
-      "c": "wanted_onboarding",
-      "d": "WANTED_ONBOARDING",
-      "answer": "a"
-    },
-    {
-      "question": "Which Operator can be used to conditionally render a React Component ?",
-      "a": "??",
-      "b": "&&",
-      "c": "::",
-      "d": "||",
-      "answer": "b"
     },
     {
       "question": "How can you optimize performance for a function component that aways render the same way ?",
@@ -127,14 +55,6 @@
       "c": "To refer to a function",
       "d": "To bind the Function",
       "answer": "a"
-    },
-    {
-      "question": "What is the correct syntax to import a Component from React ?",
-      "a": "import Component from 'react'",
-      "b": "import [ Component ] from 'react'",
-      "c": "import React.Component from 'react'",
-      "d": "import { Component }from 'react'",
-      "answer": "d"
     },
     {
       "question": "React separates the user interface into components. How are components combinded to create a user interface ?",
@@ -159,6 +79,14 @@
       "c": "Because prop values cannot be stored in state",
       "d": "Because you should never mutate state",
       "answer": "a"
+    },
+    {
+      "question": "",
+      "a": "",
+      "b": "",
+      "c": "",
+      "d": "",
+      "answer": ""
     }
   ],
 
@@ -170,38 +98,6 @@
       "c": "Both",
       "d": "None",
       "answer": "c"
-    },
-    {
-      "question": "Which of the following write the message 'Hello Wanted!' in an alert box ?",
-      "a": "alertBox('Hello Wanted!')",
-      "b": "alert('Hello Wanted!')",
-      "c": "msgAlert('Hello Wanted!')",
-      "d": "alert('Hello Wanted!')",
-      "answer": "d"
-    },
-    {
-      "question": "How do you find the minimum of x and y using JS ?",
-      "a": "min(x,y)",
-      "b": "Math.min(x,y)",
-      "c": "Math.min(xy)",
-      "d": "min(xy)",
-      "answer": "b"
-    },
-    {
-      "question": "Which are the correct 'if' statement to execute certain code if 'x' is equal to 2 ?",
-      "a": "if(x2)",
-      "b": "if(x=2)",
-      "c": "if(x==2)",
-      "d": "if(x!=2)",
-      "answer": "c"
-    },
-    {
-      "question": "What will the code return? 'Boolean(3 < 7)",
-      "a": "true",
-      "b": "false",
-      "c": "NaN",
-      "d": "SyntaxError",
-      "answer": "a"
     },
     {
       "question": "Whick built-in method combines the text of two strings and returns a new string ?",
@@ -228,14 +124,6 @@
       "answer": "b"
     },
     {
-      "question": "Which of the following function of Number object returns the number's value ?",
-      "a": "toString( )",
-      "b": "valueOf( )",
-      "c": "toLocaleString( )",
-      "d": "toPrecision( )",
-      "answer": "b"
-    },
-    {
       "question": "Upon encountering empty statements, what does the JavaScript interpreter do ?",
       "a": "Throws an error",
       "b": "Ignores the statements",
@@ -244,28 +132,12 @@
       "answer": "b"
     },
     {
-      "question": "Which of the following methods can be used to display data in some form using Javascript",
-      "a": "document.write( )",
-      "b": "console.log( )",
-      "c": "window.alert( )",
-      "d": "All of the above",
-      "answer": "d"
-    },
-    {
       "question": "What is the use of the <noscript> tag in JS ?",
       "a": "The contents are displayed by non-JS-based browsers",
       "b": "Clears all the cookies and cache",
       "c": "Both A and B",
       "d": "None of the above",
       "answer": "a"
-    },
-    {
-      "question": "When an operator's value is NULL, the typeof returned by the unary operator is : ",
-      "a": "Boolean",
-      "b": "Undefined",
-      "c": "Object",
-      "d": "Integer",
-      "answer": "C"
     },
     {
       "question": "What does the JS 'debugger' statement do ?",
@@ -284,14 +156,6 @@
       "answer": "c"
     },
     {
-      "question": "Which function is used to serialize an object into a JSON string in JS ?",
-      "a": "stringify( )",
-      "b": "parse( )",
-      "c": "convert( )",
-      "d": "None of the above",
-      "answer": "a"
-    },
-    {
       "question": "Which of the following are closures in JS ?",
       "a": "Variables",
       "b": "Functions",
@@ -300,20 +164,20 @@
       "answer": "d"
     },
     {
-      "question": "What keyword is used to declare an asynchoronous function in JS ?",
-      "a": "async",
-      "b": "await",
-      "c": "setTimeout",
-      "d": "None of the above",
-      "answer": "a"
-    },
-    {
       "question": "What does ... operator do in JS ?",
       "a": "It is used to spread iterables to individual elements",
       "b": "It is used to describe a datatype of undefined size",
       "c": "No such operator exists",
       "d": "None of the above",
       "answer": "a"
+    },
+    {
+      "question": "",
+      "a": "",
+      "b": "",
+      "c": "",
+      "d": "",
+      "answer": ""
     }
   ]
 }  

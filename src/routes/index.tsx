@@ -6,6 +6,7 @@ import QuizBoxContainer from './_components/QuizBoxContainer'
 import QuizSelect from './QuizSelect'
 import QuizCard from './QuizCard'
 import ResultPage from './ResultPage'
+import WrongAnswer from './WrongAnswer'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path='/' element={<QuizSelect />} />
             <Route path='quiz-for/:language' element={<QuizCard />} />
             <Route path='result' element={<ResultPage />} />
+            <Route path='wrong-answer' element={<WrongAnswer />} />
           </Routes>
         </QuizBoxContainer>
       </main>
