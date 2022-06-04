@@ -205,9 +205,9 @@
     },
     {
       "question": "Whick built-in method combines the text of two strings and returns a new string ?",
-      "a": "append()",
-      "b": "concat()",
-      "c": "attach()",
+      "a": "append( )",
+      "b": "concat( )",
+      "c": "attach( )",
       "d": "None of the above",
       "answer": "b"
     },
@@ -222,17 +222,17 @@
     {
       "question": "Which built-in method reverses the order of the elements of an array ?",
       "a": "changeOrder(order)",
-      "b": "reverse()",
+      "b": "reverse( )",
       "c": "sort(order)",
       "d": "None of the above",
       "answer": "b"
     },
     {
       "question": "Which of the following function of Number object returns the number's value ?",
-      "a": "toString()",
-      "b": "valueOf()",
-      "c": "toLocaleString()",
-      "d": "toPrecision()",
+      "a": "toString( )",
+      "b": "valueOf( )",
+      "c": "toLocaleString( )",
+      "d": "toPrecision( )",
       "answer": "b"
     },
     {
@@ -245,9 +245,9 @@
     },
     {
       "question": "Which of the following methods can be used to display data in some form using Javascript",
-      "a": "document.write()",
-      "b": "console.log()",
-      "c": "window.alert()",
+      "a": "document.write( )",
+      "b": "console.log( )",
+      "c": "window.alert( )",
       "d": "All of the above",
       "answer": "d"
     },
@@ -276,7 +276,7 @@
       "answer": "b"
     },
     {
-      "question": "What does the 'toLocaleString()' method do in JS ?",
+      "question": "What does the 'toLocaleString( )' method do in JS ?",
       "a": "Returns a localised object representation",
       "b": "Returns a parsed string",
       "c": "Returns a localized string representation of an object",
@@ -285,9 +285,9 @@
     },
     {
       "question": "Which function is used to serialize an object into a JSON string in JS ?",
-      "a": "stringify()",
-      "b": "parse()",
-      "c": "convert()",
+      "a": "stringify( )",
+      "b": "parse( )",
+      "c": "convert( )",
       "d": "None of the above",
       "answer": "a"
     },
