@@ -1,15 +1,11 @@
 import questions from '../assets/jsons/questions.json'
 
-import { shuffleArray } from 'utils/question'
-
 const get10RandomJavascriptQuestions = () => {
-  const shuffledQuestions = shuffleArray(questions.javascript)
-  return shuffledQuestions.slice(0, 11)
+  return questions.javascript
 }
 
 const get10RandomReactQuestions = () => {
-  const shuffledQuestions = shuffleArray(questions.react)
-  return shuffledQuestions.slice(0, 11)
+  return questions.react
 }
 
 export const get10RandomQuestions = (type: string | undefined) => {

@@ -2,6 +2,7 @@ import { useState } from 'hooks'
 import { useDispatch } from 'react-redux'
 import { setScoreIncrease } from 'states/result'
 import styles from './quizCardLayout.module.scss'
+import store from 'storejs'
 
 interface Props {
   quiz: {
@@ -16,18 +17,25 @@ interface Props {
 }
 
 const QuizCardLayout = ({ quiz, goToNextQuestion }: Props) => {
-  const [answer, setAnswer] = useState('')
+  const [userAnswer, setUserAnswer] = useState('')
 
   const dispatch = useDispatch()
 
   const handleAnswer = (e: any) => {
-    setAnswer(e.currentTarget.value)
+    setUserAnswer(e.currentTarget.value)
   }
 
   const handleTotalScore = () => {
     goToNextQuestion()
-    if (answer === quiz.answer) dispatch(setScoreIncrease())
-    setAnswer('')
+    if (userAnswer === quiz.answer) {
+      dispatch(setScoreIncrease())
+    } else if (userAnswer !== quiz.answer) {
+      const isStorageEmpty = store.get('wrongAnswers')
+      if (!isStorageEmpty) {
+        store.set('wrongAnswers', [{ question: quiz.question }])
+      } else store.set('wrongAnswers', [...isStorageEmpty, { question: quiz.question }])
+    }
+    setUserAnswer('')
   }
 
   return (
@@ -37,19 +45,19 @@ const QuizCardLayout = ({ quiz, goToNextQuestion }: Props) => {
       </div>
       <ul>
         <li>
-          <input type='radio' id='quiz-a' value='a' onChange={handleAnswer} checked={answer === 'a'} />
+          <input type='radio' id='quiz-a' value='a' onChange={handleAnswer} checked={userAnswer === 'a'} />
           <label htmlFor='quiz-a'>{quiz.a}</label>
         </li>
         <li>
-          <input type='radio' id='quiz-b' value='b' onChange={handleAnswer} checked={answer === 'b'} />
+          <input type='radio' id='quiz-b' value='b' onChange={handleAnswer} checked={userAnswer === 'b'} />
           <label htmlFor='quiz-b'>{quiz.b}</label>
         </li>
         <li>
-          <input type='radio' id='quiz-c' value='c' onChange={handleAnswer} checked={answer === 'c'} />
+          <input type='radio' id='quiz-c' value='c' onChange={handleAnswer} checked={userAnswer === 'c'} />
           <label htmlFor='quiz-c'>{quiz.c}</label>
         </li>
         <li>
-          <input type='radio' id='quiz-d' value='d' onChange={handleAnswer} checked={answer === 'd'} />
+          <input type='radio' id='quiz-d' value='d' onChange={handleAnswer} checked={userAnswer === 'd'} />
           <label htmlFor='quiz-d'>{quiz.d}</label>
         </li>
       </ul>

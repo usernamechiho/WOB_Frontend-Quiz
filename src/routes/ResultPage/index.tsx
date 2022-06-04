@@ -1,5 +1,6 @@
 import styles from './resultPage.module.scss'
-import { useMount, useUnmount } from 'hooks'
+import { useNavigate } from 'react-router-dom'
+import { useMount } from 'hooks'
 import { useDispatch, useSelector } from 'react-redux'
 import { getScore, setQuizReset, setTotalScoreReset } from 'states/result'
 
@@ -7,13 +8,17 @@ import { VictoryPie } from 'victory'
 
 const ResultPage = () => {
   const dispatch = useDispatch()
+  const navigate = useNavigate()
   const totalScore = useSelector(getScore)
 
   useMount(() => {
     dispatch(setQuizReset())
   })
 
-  console.log(totalScore)
+  const resetTotalScore = () => {
+    dispatch(setTotalScoreReset())
+    navigate('/wrong-answer')
+  }
 
   return (
     <div className={styles.resultPageContainer}>
@@ -27,7 +32,9 @@ const ResultPage = () => {
         />
         <p>{totalScore} %</p>
       </div>
-      <button type='button'>Check Wrong Answers</button>
+      <button type='button' onClick={resetTotalScore}>
+        Check Wrong Answers
+      </button>
     </div>
   )
 }
