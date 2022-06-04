@@ -28,7 +28,7 @@
       "question": "Which of the following valid component return type of React ?",
       "a": "State & Props",
       "b": "Service & Components",
-      "c": "State & PServices",
+      "c": "State & Services",
       "d": "State & Component",
       "answer": "a"
     },
@@ -180,7 +180,7 @@
       "answer": "d"
     },
     {
-      "question": "How do you find the minumom of x and y using JS ?",
+      "question": "How do you find the minimum of x and y using JS ?",
       "a": "min(x,y)",
       "b": "Math.min(x,y)",
       "c": "Math.min(xy)",
@@ -202,14 +202,6 @@
       "c": "NaN",
       "d": "SyntaxError",
       "answer": "a"
-    },
-    {
-      "question": "Which is the correct javaScript syntax to change the HTML given below? '<p id='test'>Hello World!</p>'",
-      "a": "document.getElementById('test').innerHTML = 'Hello Wanted!'",
-      "b": "document.getElementsById('test').innerHTML = 'Hello Wanted!'",
-      "c": "document.getElementById(test).innerHTML = 'Hello Wanted!'",
-      "d": "document.getElementByTagName('p')[0].innerHTML = 'Hello Wanted!'",
-      "answer": ""
     },
     {
       "question": "Whick built-in method combines the text of two strings and returns a new string ?",
