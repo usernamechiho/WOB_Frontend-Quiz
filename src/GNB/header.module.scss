@@ -1,6 +1,6 @@
 @use '/src/styles/constants/colors';
 
-header {
+.headerContainer {
   position: fixed;
   top: 0;
   width: 100%;
@@ -14,12 +14,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-right: 50px;
   color: colors.$TOPNAV;
-
-  p {
-    letter-spacing: 10;
-  }
 
   button {
     font-size: 16px;
