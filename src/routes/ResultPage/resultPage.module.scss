@@ -2,18 +2,6 @@
 
 .resultPageContainer {
   display: flex;
-
-  button {
-    position: absolute;
-    bottom: 0;
-    width: 550px;
-    height: 70px;
-    font-size: 18px;
-    color: colors.$WHITE;
-    background: colors.$ANSWER_BUTTON;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
 }
 
 .scoreChartContainer {

@@ -4,7 +4,7 @@ import cx from 'classnames'
 interface ButtonProps {
   content: string
   category: string
-  onClick?: () => void
+  onClick: () => void
 }
 
 const Button = ({ content, category, onClick }: ButtonProps) => {

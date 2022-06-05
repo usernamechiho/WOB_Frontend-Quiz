@@ -1,10 +1,13 @@
 import styles from './resultPage.module.scss'
-import { useNavigate } from 'react-router-dom'
+
 import { useMount } from 'hooks'
+
+import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { getScore, setQuizReset, setTotalScoreReset } from 'states/result'
-
 import { VictoryPie } from 'victory'
+
+import SubmitButton from 'routes/_components/SubmitButton/SubmitButton'
 
 const ResultPage = () => {
   const dispatch = useDispatch()
@@ -32,9 +35,7 @@ const ResultPage = () => {
         />
         <p>{totalScore} %</p>
       </div>
-      <button type='button' onClick={resetTotalScore}>
-        Check Wrong Answers
-      </button>
+      <SubmitButton onClick={resetTotalScore} content='Check Wrong Answer' />
     </div>
   )
 }

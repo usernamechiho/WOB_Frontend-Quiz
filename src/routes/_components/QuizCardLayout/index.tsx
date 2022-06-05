@@ -1,8 +1,12 @@
-import { useState } from 'hooks'
+import styles from './quizCardLayout.module.scss'
+
+import { ChangeEvent, useState } from 'react'
+
 import { useDispatch } from 'react-redux'
 import { setScoreIncrease } from 'states/result'
-import styles from './quizCardLayout.module.scss'
 import store from 'storejs'
+
+import SubmitButton from '../SubmitButton/SubmitButton'
 
 interface Props {
   quiz: {
@@ -21,7 +25,7 @@ const QuizCardLayout = ({ quiz, goToNextQuestion }: Props) => {
 
   const dispatch = useDispatch()
 
-  const handleAnswer = (e: any) => {
+  const handleAnswer = (e: ChangeEvent<HTMLInputElement>) => {
     setUserAnswer(e.currentTarget.value)
   }
 
@@ -61,9 +65,7 @@ const QuizCardLayout = ({ quiz, goToNextQuestion }: Props) => {
           <label htmlFor='quiz-d'>{quiz.d}</label>
         </li>
       </ul>
-      <button type='button' onClick={handleTotalScore} className={styles.submitButton}>
-        Submit
-      </button>
+      <SubmitButton onClick={handleTotalScore} content='Submit' />
     </>
   )
 }
