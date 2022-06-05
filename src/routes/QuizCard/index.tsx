@@ -20,7 +20,7 @@ const QuizCard = () => {
 
   useEffect(() => {
     if (idx === 10) navigate('/result')
-  }, [idx])
+  }, [idx, navigate])
 
   const goToNextQuestion = () => {
     dispatch(setStageIncrease())
