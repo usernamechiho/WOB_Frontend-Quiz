@@ -7,10 +7,14 @@
   h1 {
     margin: 20px auto;
     font-size: 25px;
-    color: colors.$QUESTION;
+    color: colors.$ANSWERS;
   }
 
   ul {
     margin-top: 10px;
+
+    li {
+      color: colors.$ANSWERS;
+    }
   }
 }
