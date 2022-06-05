@@ -1,12 +1,20 @@
 import styles from './wrongAnswer.module.scss'
-import store from 'storejs'
+
 import { useState, useMount } from 'hooks'
 import { useNavigate } from 'react-router-dom'
+
+import store from 'storejs'
+
+import SubmitButton from 'routes/_components/SubmitButton/SubmitButton'
+
+interface WrongProps {
+  question: string
+}
 
 const WrongAnswer = () => {
   const navigate = useNavigate()
 
-  const [wrongAnswers, setWrongAnswers] = useState<any[]>([])
+  const [wrongAnswers, setWrongAnswers] = useState<WrongProps[]>([])
 
   useMount(() => {
     const getWrongAnswers = store.get('wrongAnswers')
@@ -23,11 +31,9 @@ const WrongAnswer = () => {
 
   return (
     <div className={styles.wrongAnswerContainer}>
-      <h1>The Questions You Have to Study For</h1>
+      <h1>Questions You Have to Study For</h1>
       <ul>{wrongQuestions}</ul>
-      <button type='button' onClick={handleClearStorage} className={styles.submitButton}>
-        Continue
-      </button>
+      <SubmitButton onClick={handleClearStorage} content='Continue' />
     </div>
   )
 }

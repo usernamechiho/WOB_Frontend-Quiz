@@ -1,8 +1,8 @@
 import { useState, useEffect, useMount } from 'hooks'
+
 import { useParams, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { setStageIncrease, setQuizStart } from 'states/result'
-
 import { get10RandomQuestions } from 'services/fetchQuestion'
 
 import QuizCardLayout from 'routes/_components/QuizCardLayout'
