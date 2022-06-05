@@ -1,0 +1,21 @@
+@use '/src/styles/constants/colors';
+
+.buttonComponent {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: colors.$WHITE;
+  letter-spacing: 0.5px;
+  background: colors.$ANSWER_BUTTON;
+  border-radius: 10px;
+
+  &.javascript {
+    color: colors.$ANSWERS;
+    background: colors.$JAVASCRIPT;
+  }
+
+  &.react {
+    color: colors.$ANSWERS;
+    background: colors.$REACT;
+  }
+}

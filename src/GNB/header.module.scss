@@ -1,0 +1,23 @@
+@use '/src/styles/constants/colors';
+
+.headerContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  color: colors.$TOPNAV;
+  background: colors.$WHITE;
+
+  .navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: colors.$TOPNAV;
+
+    button {
+      font-size: 16px;
+      color: colors.$TOPNAV;
+    }
+  }
+}

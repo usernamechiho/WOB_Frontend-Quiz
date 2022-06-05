@@ -1,0 +1,20 @@
+@use '/src/styles/constants/colors';
+
+.wrongAnswerContainer {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin: 20px auto;
+    font-size: 25px;
+    color: colors.$ANSWERS;
+  }
+
+  ul {
+    margin-top: 10px;
+
+    li {
+      color: colors.$ANSWERS;
+    }
+  }
+}
