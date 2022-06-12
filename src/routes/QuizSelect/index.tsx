@@ -1,14 +1,14 @@
 import styles from './quizSelect.module.scss'
 
-import Button from 'routes/_components/Button'
+import { useMount } from 'hooks'
+import store from 'storejs'
 
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { setQuizStart, setQuizReset } from 'states/result'
 
 import { JavascriptImage, ReactImage } from 'assets/svgs'
-
-import { useMount } from 'hooks'
+import Button from 'routes/_components/Button'
 
 const QuizSelect = () => {
   const dispatch = useDispatch()
@@ -19,6 +19,7 @@ const QuizSelect = () => {
 
   useMount(() => {
     dispatch(setQuizReset())
+    store.set('wrongAnswers', [])
   })
 
   return (

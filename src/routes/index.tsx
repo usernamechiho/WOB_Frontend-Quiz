@@ -13,14 +13,14 @@ const App = () => {
     <div className={styles.container}>
       <Header />
       <main>
-        <QuizBoxContainer>
-          <Routes>
+        <Routes>
+          <Route element={<QuizBoxContainer />}>
             <Route path='/' element={<QuizSelect />} />
             <Route path='quiz-for/:language' element={<QuizCard />} />
             <Route path='result' element={<ResultPage />} />
-            <Route path='wrong-answer' element={<WrongAnswer />} />
-          </Routes>
-        </QuizBoxContainer>
+          </Route>
+          <Route path='wrong-answer' element={<WrongAnswer />} />
+        </Routes>
       </main>
     </div>
   )

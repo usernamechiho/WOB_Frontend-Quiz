@@ -1,10 +1,12 @@
 import styles from './quizBoxContainer.module.scss'
 
-interface Children {
-  children: React.ReactNode
-}
+import { Outlet } from 'react-router-dom'
 
-const QuizBoxContainer = ({ children }: Children) => {
-  return <div className={styles.quizBox}>{children}</div>
+const QuizBoxContainer = () => {
+  return (
+    <div className={styles.quizBox}>
+      <Outlet />
+    </div>
+  )
 }
 export default QuizBoxContainer
