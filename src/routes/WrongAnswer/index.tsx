@@ -7,6 +7,7 @@ import { QuestionProps } from 'types/question'
 import store from 'storejs'
 
 import WrongAnswerLayout from '../_components/WrongAnswerLayout'
+import { Error } from 'assets/svgs'
 
 const WrongAnswer = () => {
   const navigate = useNavigate()
@@ -28,13 +29,15 @@ const WrongAnswer = () => {
     <WrongAnswerLayout props={answer} key={answer.quiz.question} />
   ))
 
+  const ErrorCount = wrongAnswers.length
+
   return (
     <div className={styles.wrongAnswerContainer}>
-      <h1>Error!</h1>
-      <button type='button' onClick={handleClearStorage}>
-        초기화
-      </button>
+      <Error />
       {WrongQuestions}
+      <button type='button' onClick={handleClearStorage}>
+        Quiz Again !
+      </button>
     </div>
   )
 }

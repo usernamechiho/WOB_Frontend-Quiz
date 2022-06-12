@@ -1,5 +1,28 @@
+@use '/src/styles/constants/colors';
+
 .answerList {
   display: flex;
   flex-direction: column;
+  padding: 10px 30px;
   margin-bottom: 15px;
+  line-height: 25px;
+
+  h5 {
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: colors.$QUESTION;
+    word-spacing: 4px;
+  }
+
+  .iconAndAnswer {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  span {
+    margin-left: 10px;
+    color: colors.$ANSWERS;
+    letter-spacing: 0.5px;
+  }
 }

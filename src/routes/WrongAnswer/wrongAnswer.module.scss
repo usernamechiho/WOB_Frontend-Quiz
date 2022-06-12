@@ -11,9 +11,11 @@
   box-shadow: 0 0 5px 10px rgba(100, 100, 100, 10%);
 
   h1 {
+    display: flex;
+    align-items: center;
     margin: 20px auto;
-    font-size: 25px;
-    color: colors.$ANSWERS;
+    font-size: 40px;
+    color: colors.$ERROR;
   }
 
   ul {
@@ -23,4 +25,15 @@
       color: colors.$ANSWERS;
     }
   }
+}
+
+button {
+  bottom: 0;
+  width: 550px;
+  height: 70px;
+  font-size: 18px;
+  color: colors.$WHITE;
+  background: colors.$ANSWER_BUTTON;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }

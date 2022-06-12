@@ -10,11 +10,25 @@ const WrongAnswerLayout = ({ props }: any) => {
   const { quiz, userAnswer } = props
 
   const IconWithAnswer: JSX.Element[] = QUESTIONS.map((opt) => (
-    <p key={`question_${opt}`}>
-      {quiz.answer === opt && <Correct />}
-      {quiz.answer !== userAnswer && userAnswer === opt && <Incorrect />}
-      {quiz.answer !== opt && userAnswer !== opt && <Normal />}
-      {opt + quiz[opt]}
+    <p key={`question_${opt}`} className={styles.iconAndAnswer}>
+      {quiz.answer === opt && (
+        <>
+          <Correct />
+          <span style={{ color: '#007bff' }}>{quiz[opt]}</span>
+        </>
+      )}
+      {quiz.answer !== userAnswer && userAnswer === opt && (
+        <>
+          <Incorrect />
+          <span style={{ color: '#ff6464' }}>{quiz[opt]}</span>
+        </>
+      )}
+      {quiz.answer !== opt && userAnswer !== opt && (
+        <>
+          <Normal />
+          <span style={{ color: '#636366' }}>{quiz[opt]}</span>
+        </>
+      )}
     </p>
   ))
 
