@@ -1,7 +1,5 @@
 import styles from './wrongAnswerLayout.module.scss'
 
-import { QuestionProps } from 'types/question'
-
 import { Correct, Incorrect, Normal } from 'assets/svgs'
 
 const QUESTIONS = ['a', 'b', 'c', 'd']
