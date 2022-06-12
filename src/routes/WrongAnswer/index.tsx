@@ -29,8 +29,6 @@ const WrongAnswer = () => {
     <WrongAnswerLayout props={answer} key={answer.quiz.question} />
   ))
 
-  const ErrorCount = wrongAnswers.length
-
   return (
     <div className={styles.wrongAnswerContainer}>
       <Error />

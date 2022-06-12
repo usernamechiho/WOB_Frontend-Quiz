@@ -36,7 +36,7 @@ const ResultPage = () => {
         />
         <p>{totalScore} %</p>
       </div>
-      <SubmitButton onClick={resetTotalScore} content='Check Wrong Answer' />
+      <SubmitButton onClick={resetTotalScore} content='Check Answers !' />
     </div>
   )
 }
