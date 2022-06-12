@@ -54,12 +54,12 @@ https://chiho-frontend-quiz.netlify.app/
 - 퀴즈 페이지입니다.
 - 사지선다 형식입니다.
 
-![결과 페이지](https://user-images.githubusercontent.com/87627359/172036699-3bce0fee-f497-42f1-ab98-a42fb7a4cdb7.gif)
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/87627359/173246684-f895c441-377a-454d-a713-1a33321d1c77.png">
 
 
 - 정답률을 나타냅니다.
 
-![오답페이지](https://user-images.githubusercontent.com/87627359/172036694-063518ac-abf6-412f-a159-bc60e9be9241.gif)
+![오답페이지](https://user-images.githubusercontent.com/87627359/173246729-dacc3d05-dbfd-48ef-aca9-ef148ce4a161.gif)
 
 - 오답을 선택한 질문들이 노출됩니다.
 - Continue 버튼을 누를 시 메인 페이지로 이동합니다.
