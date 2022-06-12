@@ -1,4 +1,4 @@
-import { useState, useEffect, useMount } from 'hooks'
+import { useState, useMount } from 'hooks'
 
 import { useParams, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
@@ -18,13 +18,12 @@ const QuizCard = () => {
     dispatch(setQuizStart())
   })
 
-  useEffect(() => {
-    if (idx === 10) navigate('/result')
-  }, [idx, navigate])
-
   const goToNextQuestion = () => {
-    dispatch(setStageIncrease())
-    setIdx((prev) => prev + 1)
+    if (idx === 9) navigate('/result')
+    else {
+      dispatch(setStageIncrease())
+      setIdx((prev) => prev + 1)
+    }
   }
 
   const quiz = get10RandomQuestions(language)

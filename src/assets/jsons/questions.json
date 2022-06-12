@@ -79,14 +79,6 @@
       "c": "Because prop values cannot be stored in state",
       "d": "Because you should never mutate state",
       "answer": "a"
-    },
-    {
-      "question": "",
-      "a": "",
-      "b": "",
-      "c": "",
-      "d": "",
-      "answer": ""
     }
   ],
 
@@ -170,14 +162,6 @@
       "c": "No such operator exists",
       "d": "None of the above",
       "answer": "a"
-    },
-    {
-      "question": "",
-      "a": "",
-      "b": "",
-      "c": "",
-      "d": "",
-      "answer": ""
     }
   ]
 }  

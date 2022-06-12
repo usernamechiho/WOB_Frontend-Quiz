@@ -6,3 +6,8 @@ export interface Question {
   d: string
   answer: string
 }
+
+export interface QuestionProps {
+  quiz: Question
+  userAnswer: string | undefined
+}

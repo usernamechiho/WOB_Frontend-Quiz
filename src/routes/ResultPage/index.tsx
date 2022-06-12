@@ -31,7 +31,8 @@ const ResultPage = () => {
             { x: 'score', y: totalScore },
             { x: 'percent', y: 100 - totalScore },
           ]}
-          style={{ labels: { fontSize: 20 } }}
+          colorScale={['#5e5ce6', '#c7c7cc']}
+          style={{ labels: { fontSize: 25 } }}
         />
         <p>{totalScore} %</p>
       </div>
