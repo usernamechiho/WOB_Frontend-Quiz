@@ -31,13 +31,11 @@ const QuizCardLayout = ({ quiz, goToNextQuestion }: Props) => {
 
   const handleTotalScore = () => {
     goToNextQuestion()
-    if (userAnswer === quiz.answer) {
-      dispatch(setScoreIncrease())
-    } else if (userAnswer !== quiz.answer) {
+    if (userAnswer === quiz.answer) dispatch(setScoreIncrease())
+    else {
       const isStorageEmpty = store.get('wrongAnswers')
-      if (!isStorageEmpty) {
-        store.set('wrongAnswers', [{ question: quiz.question }])
-      } else store.set('wrongAnswers', [...isStorageEmpty, { question: quiz.question }])
+      if (!isStorageEmpty) store.set('wrongAnswers', [{ quiz, userAnswer }])
+      else store.set('wrongAnswers', [...isStorageEmpty, { quiz, userAnswer }])
     }
     setUserAnswer('')
   }

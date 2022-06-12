@@ -1,8 +1,14 @@
 @use '/src/styles/constants/colors';
 
 .wrongAnswerContainer {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  width: 550px;
+  height: 550px;
+  margin-top: 60px;
+  overflow-y: scroll;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 10px rgba(100, 100, 100, 10%);
 
   h1 {
     margin: 20px auto;
