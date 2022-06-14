@@ -1,10 +1,17 @@
+/* eslint-disable react/prop-types */
 import styles from './wrongAnswerLayout.module.scss'
 
 import { Correct, Incorrect, Normal } from 'assets/svgs'
 
+import { Question, QuestionProps } from 'types/question'
+
+interface Props {
+  props: QuestionProps
+}
+
 const QUESTIONS = ['a', 'b', 'c', 'd']
 
-const WrongAnswerLayout = ({ props }: any) => {
+const WrongAnswerLayout = ({ props }: Props) => {
   const { quiz, userAnswer } = props
 
   const IconWithAnswer: JSX.Element[] = QUESTIONS.map((opt) => (
@@ -12,19 +19,19 @@ const WrongAnswerLayout = ({ props }: any) => {
       {quiz.answer === opt && (
         <>
           <Correct />
-          <span style={{ color: '#007bff' }}>{quiz[opt]}</span>
+          <span style={{ color: '#007bff' }}>{quiz[opt as keyof Question]}</span>
         </>
       )}
       {quiz.answer !== userAnswer && userAnswer === opt && (
         <>
           <Incorrect />
-          <span style={{ color: '#ff6464' }}>{quiz[opt]}</span>
+          <span style={{ color: '#ff6464' }}>{quiz[opt as keyof Question]}</span>
         </>
       )}
       {quiz.answer !== opt && userAnswer !== opt && (
         <>
           <Normal />
-          <span style={{ color: '#636366' }}>{quiz[opt]}</span>
+          <span style={{ color: '#636366' }}>{quiz[opt as keyof Question]}</span>
         </>
       )}
     </p>
